@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: MicroMonitorized
+
+app:    
+  rsocket:
+    client:
+      port: 7000
+      
+             
+server:
+  port: 8095
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 
+        - '*'
+        
